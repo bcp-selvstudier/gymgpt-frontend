@@ -10,7 +10,7 @@ export function Footer({ variant = 'dark' }: FooterProps) {
   return (
     <footer className={isBlue ? 'site-footer site-footer-blue' : 'site-footer site-footer-dark'}>
       <div className="gym-container footer-main">
-        <a href="https://www.gymgpt.dk/privatlivspolitik/">Privatlivspolitik</a>
+        <a href="/privatlivspolitik/">Privatlivspolitik</a>
       </div>
       {!isBlue && (
         <div className="footer-copy">

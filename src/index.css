@@ -508,6 +508,88 @@
     transform: translateY(1px) scale(0.96);
   }
 
+  .policy-content {
+    background: #ffffff;
+    padding: 40px 0 72px;
+  }
+
+  .policy-article {
+    max-width: 1080px;
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .policy-article h2 {
+    margin-top: 34px;
+    margin-bottom: 14px;
+    color: #18181b;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .policy-article h5 {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    color: #18181b;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .policy-article p {
+    margin-bottom: 16px;
+  }
+
+  .policy-article a {
+    color: #004375;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .policy-article a:hover,
+  .policy-article a:focus {
+    color: #fd5308;
+  }
+
+  .policy-article ul {
+    margin: 0 0 18px 22px;
+    list-style: disc;
+  }
+
+  .policy-article li {
+    margin-bottom: 9px;
+    padding-left: 2px;
+  }
+
+  .policy-table-wrap {
+    width: 100%;
+    margin: 18px 0 20px;
+    overflow-x: auto;
+  }
+
+  .policy-article table {
+    width: 100%;
+    min-width: 640px;
+    border-collapse: collapse;
+    background: #ffffff;
+  }
+
+  .policy-article th,
+  .policy-article td {
+    border: 1px solid #d4d4d8;
+    padding: 12px 14px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .policy-article th {
+    background: #f4f4f5;
+    color: #18181b;
+    font-weight: 600;
+  }
+
   /* Footer and back-to-top */
   .site-footer {
     position: relative;
@@ -703,6 +785,14 @@
   .avatar-icon {
     width: 44px;
     height: 44px;
+  }
+
+  .policy-content {
+    padding: 32px 0 56px;
+  }
+
+  .policy-article h2 {
+    font-size: 23px;
   }
 
   .footer-copy-inner {

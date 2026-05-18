@@ -14,7 +14,7 @@ export function CookieNotice() {
         godkender du brugen af cookies.
       </p>
       <div>
-        <a href="https://www.gymgpt.dk/privatlivspolitik/">Læs mere</a>
+        <a href="/privatlivspolitik/">Læs mere</a>
         <button
           type="button"
           onClick={() => {
