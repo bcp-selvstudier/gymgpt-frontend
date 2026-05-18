@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+webmatbot2.code-workspace
+.env
 
 # Editor directories and files
 .vscode/*
