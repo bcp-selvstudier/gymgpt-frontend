@@ -452,15 +452,24 @@
     padding: 0 8px 0 16px;
   }
 
-  .subject-chat-input span {
+  .subject-chat-input input {
     min-width: 0;
     flex: 1;
     overflow: hidden;
+    border: 0;
+    background: transparent;
     color: #9a9a9a;
     font-size: 22px;
     font-weight: 300;
+    line-height: 1.2;
+    outline: none;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .subject-chat-input input::placeholder {
+    color: #9a9a9a;
+    opacity: 1;
   }
 
   .subject-send-button {
@@ -659,7 +668,7 @@
   }
 
   .subject-chat-message p,
-  .subject-chat-input span {
+  .subject-chat-input input {
     font-size: 18px;
   }
 

@@ -6,6 +6,10 @@ type SubjectChatCardProps = {
 }
 
 export function SubjectChatCard({ subject }: SubjectChatCardProps) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+  }
+
   return (
     <div className="subject-chat-frame">
       <div className="subject-chat-panel">
@@ -15,12 +19,12 @@ export function SubjectChatCard({ subject }: SubjectChatCardProps) {
           </div>
           <p>{subject.teacherIntro}</p>
         </div>
-        <div className="subject-chat-input">
-          <span>{subject.inputPlaceholder}</span>
-          <button type="button" aria-label="Spørg" disabled className="subject-send-button">
+        <form className="subject-chat-input" onSubmit={handleSubmit}>
+          <input type="text" placeholder={subject.inputPlaceholder} aria-label="Skriv dit spørgsmål" />
+          <button type="submit" aria-label="Spørg" className="subject-send-button">
             <SendArrowIcon />
           </button>
-        </div>
+        </form>
       </div>
     </div>
   )
