@@ -26,8 +26,8 @@ export const subjects: Subject[] = [
   {
     name: 'Fysik',
     slug: 'fysik',
-    href: 'https://www.gymgpt.dk/fysik/',
-    isLocal: false,
+    href: '/fysik/',
+    isLocal: true,
     pageTitle: 'Fysik - GymGPT',
     teacherIntro: 'Jeg er din personlige fysiklærer. Hvad kan jeg hjælpe dig med?',
     inputPlaceholder: sharedInputPlaceholder,
@@ -36,8 +36,8 @@ export const subjects: Subject[] = [
   {
     name: 'Kemi',
     slug: 'kemi-c',
-    href: 'https://www.gymgpt.dk/kemi-c/',
-    isLocal: false,
+    href: '/kemi-c/',
+    isLocal: true,
     pageTitle: 'Kemi - GymGPT',
     teacherIntro: 'Jeg er din personlige kemilærer. Hvad kan jeg hjælpe dig med?',
     inputPlaceholder: sharedInputPlaceholder,
@@ -46,8 +46,8 @@ export const subjects: Subject[] = [
   {
     name: 'Biologi',
     slug: 'biologi',
-    href: 'https://www.gymgpt.dk/biologi/',
-    isLocal: false,
+    href: '/biologi/',
+    isLocal: true,
     pageTitle: 'Biologi - GymGPT',
     teacherIntro: 'Jeg er din personlige biologilærer. Hvad kan jeg hjælpe dig med?',
     inputPlaceholder: sharedInputPlaceholder,

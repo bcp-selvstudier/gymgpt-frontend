@@ -1,3 +1,4 @@
+import type { FormEvent } from 'react'
 import type { Subject } from '../../data/subjects'
 import { AvatarIcon, SendArrowIcon } from '../../icons/Icons'
 
@@ -6,7 +7,7 @@ type SubjectChatCardProps = {
 }
 
 export function SubjectChatCard({ subject }: SubjectChatCardProps) {
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
   }
 
