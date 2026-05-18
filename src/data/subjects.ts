@@ -35,8 +35,8 @@ export const subjects: Subject[] = [
   },
   {
     name: 'Kemi',
-    slug: 'kemi-c',
-    href: '/kemi-c/',
+    slug: 'kemi',
+    href: '/kemi/',
     isLocal: true,
     pageTitle: 'Kemi - GymGPT',
     teacherIntro: 'Jeg er din personlige kemilærer. Hvad kan jeg hjælpe dig med?',
