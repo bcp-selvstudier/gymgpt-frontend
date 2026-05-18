@@ -1,0 +1,4 @@
+interface:
+  display_name: "DRY Refactor"
+  short_description: "Refactor repeated UI into reusable patterns"
+  default_prompt: "Use $dry-refactor before adding repeated pages or duplicated UI components."

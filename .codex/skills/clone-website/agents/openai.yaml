@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clone Website"
+  short_description: "Clone public pages with visual fidelity"
+  default_prompt: "Use $clone-website to clone a public website page into the local frontend."
