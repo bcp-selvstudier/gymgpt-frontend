@@ -26,6 +26,15 @@ Use project-local skills when their triggers match:
   route/link data, or maintainability cleanup. It covers shared templates,
   config-driven pages, reusable CSS, and behavior-preserving refactors.
 
+## Planning Documents
+
+- `PLAN.md` contains the current long-term improvement plan for frontend quality
+  and FastAPI readiness.
+- Read `PLAN.md` before making architectural, routing, chat, API-boundary, or
+  backend-readiness changes.
+- Do not implement `PLAN.md` automatically. Follow it when the user asks for
+  plan work or when it directly clarifies the requested change.
+
 ## Commands
 
 Use `npm.cmd` on Windows PowerShell:

@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# GymGPT Local Frontend Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a local React/Tailwind recreation of the visible frontend of
+`https://www.gymgpt.dk/`. It is currently a static frontend-only clone with
+local pages, reusable subject templates, and an inert chat UI.
 
-Currently, two official plugins are available:
+The project is intended as a foundation for a later Python FastAPI backend
+integration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository contains the public frontend prototype only. The FastAPI
+backend, AI orchestration, prompts, and production infrastructure are private
+and not included.
 
-## React Compiler
+## Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `/`
+- `/matematik/`
+- `/fysik/`
+- `/kemi/`
+- `/biologi/`
+- `/privatlivspolitik/`
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Run Locally
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```powershell
+npm.cmd install
+npm.cmd run dev -- --host 127.0.0.1 --port 5174
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Useful checks:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```powershell
+npm.cmd run lint
+npm.cmd run build
 ```
+
+## Project Notes
+
+- This is a visible frontend clone only.
+- It does not copy the WordPress backend, plugin scripts, analytics, or AI backend behavior.
+- Subject pages are data-driven through shared templates.
+- The chat UI is intentionally inert for now.
+- The planned backend target is Python FastAPI.
+- The private backend, AI prompts, orchestration logic, and deployment setup are not part of this repository.
+
+## Agent Guidance
+
+- `AGENT.md` contains coding-agent instructions for this project.
+- `PLAN.md` contains the longer-term frontend quality and FastAPI readiness plan.
+- `CLAUDE.md` points Claude Code to `AGENT.md` so project guidance stays in one place.
+
+## Copyright
+
+Copyright (c) 2026 Bjørn la Cour Poulsen. All rights reserved.
+
+No license is granted for copying, modifying, distributing, or using this code
+unless permission is given explicitly.
