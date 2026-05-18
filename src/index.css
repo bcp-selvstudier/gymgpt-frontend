@@ -31,6 +31,7 @@
 }
 
 @layer components {
+  /* Shared shell and layout */
   .page-shell {
     min-height: 100vh;
     background: #ffffff;
@@ -72,6 +73,7 @@
     box-shadow: 0 1px 4px rgb(0 0 0 / 18%);
   }
 
+  /* Header and navigation */
   .gym-header {
     position: relative;
     z-index: 30;
@@ -129,8 +131,12 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    border: 0;
+    background: transparent;
     padding: 32px 16px;
     color: #555555;
+    cursor: pointer;
+    font-family: inherit;
     font-size: 22px;
     font-weight: 300;
     line-height: 1.25;
@@ -237,6 +243,7 @@
     color: #fd5308;
   }
 
+  /* Homepage and subject cards */
   .teachers-section {
     background: #ffffff;
     padding: 64px 0 80px;
@@ -338,6 +345,7 @@
     background: #df4505;
   }
 
+  /* Subject pages and chat */
   .subject-hero {
     position: relative;
     height: 282px;
@@ -500,6 +508,7 @@
     transform: translateY(1px) scale(0.96);
   }
 
+  /* Footer and back-to-top */
   .site-footer {
     position: relative;
   }
@@ -583,6 +592,7 @@
     background: #df4505;
   }
 
+  /* Cookie notice */
   .cookie-notice {
     position: fixed;
     right: 20px;
@@ -619,6 +629,7 @@
     font-weight: 600;
   }
 
+  /* Icons */
   .icon-sm {
     width: 20px;
     height: 20px;
@@ -630,6 +641,7 @@
   }
 }
 
+/* Responsive rules */
 @media (max-width: 1023px) {
   .desktop-subject-nav {
     display: none;

@@ -11,9 +11,9 @@ export function SubjectMenu({ mobile = false, activeSubject }: SubjectMenuProps)
     return (
       <nav className="mobile-subject-menu">
         <div className="gym-container mobile-subject-menu-inner">
-          <a className="mobile-subject-title" href="#">
+          <div className="mobile-subject-title">
             Fag
-          </a>
+          </div>
           <div className="mobile-subject-list">
             {subjects.map((subject) => (
               <a
@@ -35,10 +35,10 @@ export function SubjectMenu({ mobile = false, activeSubject }: SubjectMenuProps)
     <nav className="desktop-subject-nav">
       <ul className="main-menu">
         <li className="main-menu-item group">
-          <a href="#" className={`main-menu-trigger ${activeSubject ? 'is-active' : ''}`}>
+          <button type="button" className={`main-menu-trigger ${activeSubject ? 'is-active' : ''}`}>
             Fag
             <ChevronDownIcon />
-          </a>
+          </button>
           <ul className="submenu group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
             {subjects.map((subject) => (
               <li key={subject.name}>
