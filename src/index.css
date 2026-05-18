@@ -482,6 +482,22 @@
     border-radius: 50%;
     background: #4a4a4a;
     color: #a7a7a7;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .subject-send-button:hover,
+  .subject-send-button:focus {
+    background: #5a5a5a;
+    color: #ffffff;
+    outline: none;
+    transform: translateY(-1px);
+  }
+
+  .subject-send-button:active {
+    background: #686868;
+    color: #ffffff;
+    transform: translateY(1px) scale(0.96);
   }
 
   .site-footer {
