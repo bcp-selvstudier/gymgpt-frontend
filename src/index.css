@@ -338,14 +338,14 @@
     background: #df4505;
   }
 
-  .math-hero {
+  .subject-hero {
     position: relative;
     height: 282px;
     overflow: hidden;
     background: #2d2d2d;
   }
 
-  .math-hero-image {
+  .subject-hero-image {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -355,13 +355,13 @@
     object-position: center 30%;
   }
 
-  .math-hero-overlay {
+  .subject-hero-overlay {
     position: absolute;
     inset: 0;
     background: rgb(0 0 0 / 10%);
   }
 
-  .math-hero-content {
+  .subject-hero-content {
     position: relative;
     display: flex;
     height: 100%;
@@ -369,7 +369,7 @@
     padding-bottom: 30px;
   }
 
-  .math-title {
+  .subject-title {
     color: #ffffff;
     font-size: 39px;
     font-weight: 700;
@@ -378,31 +378,31 @@
     letter-spacing: 0.02em;
   }
 
-  .math-breadcrumbs {
+  .subject-breadcrumbs {
     margin-top: 16px;
     color: #ffffff;
     font-size: 16px;
     font-weight: 300;
   }
 
-  .math-breadcrumbs ol {
+  .subject-breadcrumbs ol {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 12px;
   }
 
-  .math-breadcrumbs a:hover,
-  .math-breadcrumbs a:focus {
+  .subject-breadcrumbs a:hover,
+  .subject-breadcrumbs a:focus {
     text-decoration: underline;
   }
 
-  .math-content {
+  .subject-content {
     background: #ffffff;
     padding: 40px 0 92px;
   }
 
-  .math-chat-frame {
+  .subject-chat-frame {
     width: 100%;
     max-width: 1080px;
     border: 1px solid #e5e5e5;
@@ -411,20 +411,20 @@
     padding: 8px 14px;
   }
 
-  .math-chat-panel {
+  .subject-chat-panel {
     border-radius: 12px;
     background: #212121;
     padding: 18px 20px 20px;
     color: #ffffff;
   }
 
-  .math-chat-message {
+  .subject-chat-message {
     display: flex;
     align-items: flex-start;
     gap: 20px;
   }
 
-  .math-avatar {
+  .subject-avatar {
     flex-shrink: 0;
   }
 
@@ -434,7 +434,7 @@
     height: 56px;
   }
 
-  .math-chat-message p {
+  .subject-chat-message p {
     padding-top: 8px;
     color: #ffffff;
     font-size: 22px;
@@ -442,7 +442,7 @@
     line-height: 1.32;
   }
 
-  .math-chat-input {
+  .subject-chat-input {
     display: flex;
     align-items: center;
     height: 60px;
@@ -452,7 +452,7 @@
     padding: 0 8px 0 16px;
   }
 
-  .math-chat-input span {
+  .subject-chat-input span {
     min-width: 0;
     flex: 1;
     overflow: hidden;
@@ -463,7 +463,7 @@
     white-space: nowrap;
   }
 
-  .math-send-button {
+  .subject-send-button {
     display: inline-flex;
     width: 44px;
     height: 44px;
@@ -646,20 +646,20 @@
     grid-template-columns: 1fr;
   }
 
-  .math-hero {
+  .subject-hero {
     height: 215px;
   }
 
-  .math-title {
+  .subject-title {
     font-size: 32px;
   }
 
-  .math-chat-message {
+  .subject-chat-message {
     gap: 14px;
   }
 
-  .math-chat-message p,
-  .math-chat-input span {
+  .subject-chat-message p,
+  .subject-chat-input span {
     font-size: 18px;
   }
 
